@@ -1,0 +1,13 @@
+#include<stdio.h>
+int rec(int n)
+{
+    return (n==0)? 1 : n*rec(n-1);
+}
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    printf("factorial of %d is: %d\n",n,rec(n));
+
+    return 0;
+}
