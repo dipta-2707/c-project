@@ -1,0 +1,12 @@
+#include<stdio.h>
+int rec(int n)
+{
+    return(n==0||n==1)?n:rec(n-1)+rec(n-2);
+}
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    printf("the fibonacci value of %d th position using recursion is: %d",n,rec(n));
+    return 0;
+}
